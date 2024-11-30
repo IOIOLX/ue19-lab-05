@@ -28,4 +28,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: ghcr.io/IOIOLX/ue19-lab-05
+        tags: ghcr.io/ioiolx/ue19-lab-05
