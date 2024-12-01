@@ -1,16 +1,33 @@
 # ue19-lab-05
-
+![Docker iamge](https://i.pinimg.com/originals/da/8e/93/da8e93ce525e6112708af69fa77947cd.png)
+## Description
 Ce programme se sert d'un docker pour executer un programme qui affiche une blagues à l'aide d'un API appeller JokesAPI.
 
-Le programme a trois fichier, Dockerfile, l'app.py et requirement.txt.
+Le programme a trois fichier : 
+- **Dockerfile** est un fichier dans lequelle contient le script du containers.
+- **app.py** est le script python qui execute l'application.
+- **requirement.txt** est un fichier dans lequelle il y a toute les dépendances que le script python a besoin.
+## Prérequis
+- Vérifier que docker est installée, sinon l'installer [ici](https://docs.docker.com/desktop/setup/install/windows-install/)
 
-Dockerfile est un fichier dans lequelle contient le script du containers.
+``` bash
+docker --version
+```
+- Installer les 3 fichiers.
 
-app.py est le script python.
-
-requirement.txt est un fichier dans lequelle il y a toute les dépendances que le script python a besoin.
-
-Pour l'executer dans une VM kali linux, il faut télécharger tout les fichiers et les mettre dans le même répertoire. Ensuite, executer la commande " docker build -t "nom-app" "répertoire" ".
-Une fois fait, le container est crée avec les 3 fichiers. 
-
-Pour executer le container, il faut executer la commande " docker run "nom-app" "
+## Installation
+1. Lancer l'application docker
+2. Mettre les fichiers dans le même répertoire.
+3. Executer la commande pour construire le container (on peut choisir un autre nom au lieu de my-app).
+``` bash
+docker build -t my-app .
+```
+4. Ajouter un tag à l'image pour le workflow
+``` bash
+docker tag my-app ghcr.io/ioiolx
+```
+## Executer le programme
+Executer la commande 
+``` bash
+docker run my-app
+```
