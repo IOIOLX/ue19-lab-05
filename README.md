@@ -1,5 +1,9 @@
 # ue19-lab-05
 ![Docker iamge](https://i.pinimg.com/originals/da/8e/93/da8e93ce525e6112708af69fa77947cd.png)
+
+[![Python](https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Docker](https://img.shields.io/badge/-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+
 ## Description
 Ce programme se sert d'un docker pour executer un programme qui affiche une blagues à l'aide d'un API appeller JokesAPI.
 
